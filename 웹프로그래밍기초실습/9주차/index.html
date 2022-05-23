@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>레스토랑 예약하기</h1>
+    <form method="get" action="form_app.js">
+      <fieldset>
+        <legend>예약자정보</legend>
+        예약자: <input type="text" name="E-mail" required><br>
+        연락처: <input type="tel" name="p_tel" placeholder="000-0000-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"><br>
+        예약인원: 
+        <select name="number" size="1">
+          <option>1명</option><option>2명</option><option>3명</option><option>4명</option><option>5명</option>
+        </select>
+      </fieldset>
+      
+      <fieldset>
+        <legend>예약 시간 선택</legend>
+        <input type="date" name="wantdate" min="2020-01-01"><input type="time" name="time_form" min="09:00" max="22:00">
+      </fieldset>
+      
+      <fieldset>
+        <legend>메뉴 선택</legend>
+        <input type="radio" name="menu" value="A">코스 A
+          <input type="radio" name="menu" value="B">코스 B
+          <input type="radio" name="menu" value="C">코스 C
+          <input type="radio" name="menu" value="D">코스 D
+         요청사항:<br>
+        <textarea name="comment" cols="50" rows="4">의견을 적으세요</textarea>   
+      </fieldset>
+
+    <input type="submit" value="확인">
+    <input type="reset" value="취소">
+    </form>
+  </body>
+</html>

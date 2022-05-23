@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <table border="1">
+    <script type="text/javascript">
+      var num1_str = prompt("첫 번째 정수를 입력하세요", "34");
+      var num2_str = prompt("두 번째 정수를 입력하세요", "25");
+      var num1 = parseInt(num1_str);
+      var num2 = parseInt(num2_str);
+      var add = num1 + num2;
+      var sub = num1 - num2;
+      var sup = num1 * num2;
+      var div = num1 / num2;
+      
+      document.write("<caption>사칙연산 결과표</caption>");
+      document.write("<tr>");
+      document.write("<th>숫자</th>");
+      document.write("<th>"+num1+"</th>");
+      document.write("<th>"+num2+"</th>");
+      document.write("</tr>");
+      document.write("<tr>");
+      document.write("<td>더하기</td>");
+      document.write("<td colspan='2'>"+add+"</td>");
+      document.write("</tr>");
+      document.write("<tr>");
+      document.write("<td>빼기</td>");
+      document.write("<td colspan='2'>"+sub+"</td>");
+      document.write("</tr>");
+      document.write("<tr>");
+      document.write("<td>곱하기</td>");
+      document.write("<td colspan='2'>"+sup+"</td>");
+      document.write("</tr>");
+      document.write("<tr>");
+      document.write("<td>나누기</td>");
+      document.write("<td colspan='2'>"+div+"</td>");
+      document.write("</tr>");
+    </script>
+    </table>
+  </body>
+</html>

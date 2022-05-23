@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+      var arr = new Array();
+      arr.length = prompt("몇 개를 입력하시겠습니까?");
+      for (i=0; i<arr.length;i++){
+        arr[i] = prompt("숫자를 입력해주세요.");
+      }
+      var maxNum = Math.max.apply(null, arr);
+      var minNum = Math.min.apply(null, arr);
+      document.write("배열의 최대값: "+maxNum+"<br>배열의 최소값: "+minNum);
+    </script>
+  </body>
+</html>

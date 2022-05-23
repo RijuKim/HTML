@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="text/javascript">
+      var today = new Date();
+      var y = today.getFullYear();
+      var m = today.getMonth();
+      var d = today.getDate();
+      var day = today.getDay();
+
+      switch (day) {
+        case 0:
+          day = "월";
+          break;
+        case 1:
+          day = "화";
+          break;
+        case 2:
+          day = "수";
+          break;
+        case 3:
+          day = "목";
+          break;
+        case 4:
+          day = "금";
+          break;
+        case 5:
+          day = "토";
+          break;
+        case 6:
+          day = 일;
+          break;
+      }
+      
+      document.write("오늘은 "+ y + "년 " + m + "월 " + d + "일 " +day+ "요일 입니다<br/>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+  <body>
+
+    <script type="text/javascript">
+      function student(name_value, midscore_value, finscore_value, score_value) {
+        this.name = name_value;
+        this.midscore = midscore_value;
+        this.finscore = finscore_value;
+        this.score = score_value;
+        this.display = display_student;
+      }
+
+      function display_student() {
+        document.write(this.name+": "+this.score+"<br>");
+        document.wrtie("1등 학생: ");
+      }
+
+      var student = new student(); 
+      student.name = prompt("이름 입력");
+      var a = prompt("중간고사 점수 입력");
+      a = parseInt(a);
+      student.midscore = a;
+      var b = prompt("기말고사 점수 입력"); 
+      b = parseInt(b);
+      student.finscore = b;
+      student.score=(a+b)/2;
+      student.display(); 
+
+    </script>
+
+  </body>
+
+</html>
