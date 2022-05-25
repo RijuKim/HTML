@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      function changeColor(id, color) {
+        document.getElementById(id).style.background = color;
+      }
+    </script>
+  </head>
+  <body>
+    <div id ="Box" style="background: black; width: 300px; height:300px; position: relative;" ></div>
+    <button onclick = "changeColor('Box', 'red');"> Red </button>
+    <button onclick = "changeColor('Box', 'blue');"> Blue</button>
+  </body>
+</html>
